@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Статья | VitaChronicle</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin:0;
+    font-family: Inter;
+    background:#e6e6e6;
+}
+
+/* TOP BAR */
+header {
+    background:#1f1f1f;
+    color:white;
+    padding:10px 15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header a {
+    color:white;
+    margin-right:15px;
+    text-decoration:none;
+    opacity:0.85;
+}
+
+header a:hover {
+    opacity:1;
+}
+
+/* LAYOUT */
+.wrapper {
+    display:flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width:220px;
+    background:#d9d9d9;
+    padding:15px;
+    height:100vh;
+    position:sticky;
+    top:0;
+}
+
+.sidebar a {
+    display:block;
+    margin:8px 0;
+    color:#222;
+    text-decoration:none;
+}
+
+.sidebar a:hover {
+    text-decoration:underline;
+}
+
+/* CONTENT */
+.content {
+    flex:1;
+    background:white;
+    padding:30px;
+}
+
+h1 {
+    margin-top:0;
+}
+
+section {
+    margin-bottom:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div><b>VitaChronicle</b></div>
+
+<nav>
+<a href="index.html">Главная</a>
+<a href="news.html">Новости</a>
+<a href="history.html">История</a>
+<a href="crime.html">Криминал</a>
+</nav>
+</header>
+
+<div class="wrapper">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+<h3>Содержание</h3>
+<a href="#intro">Введение</a>
+<a href="#history">История</a>
+<a href="#facts">Факты</a>
+<a href="#conclusion">Вывод</a>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h1>Название статьи</h1>
+
+<section id="intro">
+<h2>Введение</h2>
+<p>Здесь будет вводный текст статьи...</p>
+</section>
+
+<section id="history">
+<h2>История</h2>
+<p>Здесь историческая часть...</p>
+</section>
+
+<section id="facts">
+<h2>Факты</h2>
+<p>Интересные факты...</p>
+</section>
+
+<section id="conclusion">
+<h2>Вывод</h2>
+<p>Заключение статьи...</p>
+</section>
+
+</div>
+
+</div>
+
+</body>
+</html>
