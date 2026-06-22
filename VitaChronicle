@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VitaChronicle Journal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #e6e6e6;
+    color: #222;
+}
+
+/* TOP BAR */
+.topbar {
+    background: #1f1f1f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-box {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #f2d6c2, #f7c9b5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333;
+    border-radius: 4px;
+    line-height: 1;
+}
+
+.menu {
+    display: flex;
+    gap: 18px;
+    font-size: 14px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.menu a:hover {
+    opacity: 1;
+}
+
+.search {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* MAIN */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* HERO LOGO */
+.hero {
+    text-align: center;
+    margin: 40px 0;
+    background: #f5f5f5;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ARTICLES */
+.section-title {
+    margin: 40px 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    background: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #f2d6c2;
+    text-decoration: none;
+}
+
+/* SIDE DECOR (your “steps”) */
+.side-decor {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    background: linear-gradient(to bottom, #d9d9d9, #cfcfcf);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.side-left {
+    left: 0;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.side-right {
+    right: 0;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- decorative sides -->
+<div class="side-decor side-left"></div>
+<div class="side-decor side-right"></div>
+
+<!-- TOP -->
+<div class="topbar">
+    <div class="logo">
+        <div class="logo-box">
+            V<br>C
+        </div>
+        <div>VitaChronicle</div>
+    </div>
+
+    <div class="menu">
+        <a href="#">Новости</a>
+        <a href="#">Статьи</a>
+        <a href="#">События</a>
+        <a href="#">Разделы</a>
+    </div>
+
+    <div class="search">🔍</div>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+
+    <div class="hero">
+        <div class="logo-box" style="margin:0 auto;">
+            V<br>C
+        </div>
+        <h1>VitaChronicle Journal</h1>
+        <p>
+            Онлайн-журнал, посвящённый историям, личностям, криминальным расследованиям, науке,
+            культуре и событиям мира. Мы собираем факты, хроники и биографии,
+            чтобы создавать полную картину реальности — от прошлого до настоящего.
+        </p>
+    </div>
+
+    <div class="section-title">Последние статьи</div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Заголовок статьи</h3>
+            <p>Краткое описание статьи, чтобы пользователь понимал о чём она.</p>
+        </div>
+
+        <div class="card">
+            <h3>История города</h3>
+            <p>Раздел про страны и города, события и развитие.</p>
+        </div>
+
+        <div class="card">
+            <h3>Криминальное дело</h3>
+            <p>Расследование и факты, оформленные в стиле хроники.</p>
+        </div>
+
+        <div class="card">
+            <h3>Наука и открытия</h3>
+            <p>Интересные исследования и научные факты.</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 VitaChronicle Journal — <a href="#">vitagechronicle.site</a>
+</footer>
+
+</body>
+</html>
